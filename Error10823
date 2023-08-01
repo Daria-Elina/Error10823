@@ -1,0 +1,13 @@
+while (true)
+        {
+          if (ops.empty())
+          {
+            error("unmatched ')' found\n");
+            goto Finish;
+          }
+
+          if (ops.top() == '(')
+          {
+            ops.pop();
+            break;
+          }
